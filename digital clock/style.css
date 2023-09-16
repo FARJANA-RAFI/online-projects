@@ -1,0 +1,62 @@
+body{
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background: url("./images/ocean.jpg");/*change image url*/
+    background-position: fixed;
+    font-family: sans-serif;
+    background-size: cover;
+    overflow: hidden; 
+    /*background-position: center;*/
+    
+}
+h2{
+    text-transform:uppercase;
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 14px;
+    
+}
+
+.clock{
+    display: flex;
+    
+}
+
+.clock div{
+    margin: 5px;
+    position: relative;
+
+}
+
+.clock span{
+    width: 100px;
+    height: 80px;
+    background:#aaa7a788 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px rgba(27, 27, 27, 0.507);
+}
+
+.clock .text{
+    height: 20px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: rgb(133, 130, 130);
+    opacity: 1;
+}
+
+.clock #ampm{
+    position: absolute;
+    bottom: 0;
+    height: 30px;
+    width: 60px;
+    font-size: 20px;
+    background: rgb(254, 254, 255);
+}
