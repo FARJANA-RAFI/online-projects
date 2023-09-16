@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 166, 49, 0.548);
+    font-family:cursive;
+}
+
+.form{
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(90, 248, 214, 0.384);
+    border-radius: 10px;
+}
+
+.input{
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    padding: 5px;
+    border: solid 3px rgba(7, 7, 7, 0.829);
+    color: rgb(0, 0, 0);
+
+}
+
+/*specifically indicating the changes of placeholder attribute*/
+.input::placeholder{
+    color: lightgray;
+    font-family: cursive;
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: large;
+    font-family: cursive;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0, 2px, 4px rgba(0, 0, 0, .3);
+    cursor:pointer;
+}
+
+.btn:hover{
+    filter: brightness(0.9 );
+}
+
+.score{
+    text-align: right;
+}
