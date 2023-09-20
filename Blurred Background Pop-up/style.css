@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction:column;/*to oder it vertically*/
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1547394765-185e1e68f34e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNvbXB1dGVyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    text-align: center;
+    transition: filter 0.7s;
+}
+
+h1{
+    color: white;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.btn{
+    padding: 10px 20px;
+    width: 200px;
+    cursor: pointer;
+    color: white;
+    font-family:sans-serif;    background-color: rgba(55, 55, 220, 0.754);
+    border:none;
+    border-radius: 5px;
+    font-size: larger;
+}
+.btn:hover{
+    filter: brightness(0.3);
+}
+.active.container{
+    filter: blur(3px) brightness(0.7);
+}
+
+.popup-container{
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+    background-color: grey;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: url("https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNvbXB1dGVyfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(189, 185, 185, 0.641);
+    opacity: 1;
+    transition: all .4s;
+}
+
+h4{
+    font-size:30px;
+    margin: 10px 0;
+    font-family: sans-serif;
+    color:rgb(21, 0, 255);
+}
+
+label{
+    color: blue;
+
+}
+.input{
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 2px rgba(255, 252, 252, 0.303);
+}
+
+.input::placeholder{
+    color: lightgray;
+}
+
+.popup-btn{
+    background-color: rgb(123, 123, 193);
+    padding: 5px;
+    width: 80px;
+    font-size: 20px;
+    border: 2px solid ;
+    cursor: pointer;
+}
+
+.close-icon{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.close-icon:hover{
+    color: blue;
+}
+
+.active.popup-container{
+    visibility: hidden;
+    opacity: 0;
+    top: 10%;
+}
