@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: crimson;
+}
+
+.image-container{
+    text-align: center;
+}
+
+.image-container img{
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.791);
+    background-color: lightgray;
+}
+.btn{
+    background-color: rgba(103, 74, 132, 0.598);
+    border: none;
+    margin: 20px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px white;
+}
+.btn:hover{
+    opacity: .9;
+}
