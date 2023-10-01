@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: burlywood;
+
+}
+.slider-container{
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(3, 2, 2, 0.834);
+    position: relative;
+}
+
+.image-container{
+    display:flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.btn{
+    position: absolute;
+    top: 50%;
+    /* to position the sliding btn exactly in the middle */
+    transform: translateY(-50%); 
+    color: white;
+    font-size: 20px;
+    opacity: .5;
+    cursor: pointer;
+}
+.btn.prev{
+    left: 10px;
+}
+
+.btn.next{
+    right: 10px;
+}
+
+.btn:hover{
+    opacity: 1;
+}
