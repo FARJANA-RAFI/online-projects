@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #FFB000;
+    color: gray;
+}
+
+img{
+    display: block;
+    width: 100%;
+    border-radius: 0.5rem;
+    /* to always have the same ratio for image  */
+    object-fit: cover;
+    height: 30rem;
+    margin-bottom: 2rem;
+}
+
+.section-center{
+    width: 90vw;
+    /* maegin auto brings the content in the center */
+    margin: 0 auto;
+    max-width: 1170px;
+    min-width: 340px;
+    padding: 5rem 0;
+}
+
+.tabs{
+    background-color:#FFCF9D;
+    border-radius: .5rem;
+    /* specifies the number (and the heights) of the rows in a grid layout. */
+    grid-template-rows: auto 1fr;
+}
+
+.btn{
+    padding: 1rem 0;
+    border: none;
+    font-size: 1rem;
+    background: #004225;
+    cursor: pointer;
+    transition: all .3s linear;
+    letter-spacing: .25rem;
+    color: white;
+}
+
+.btn-container{
+    display: grid;
+    /* specifies the number (and the widths) of columns in a grid layout */
+    grid-template-columns: 1fr 1fr 1fr;
+}
+/* border of the first btn */
+.btn:nth-child(1){
+    border-top-left-radius: 0.5rem;
+}
+/* border of the 3rd btn */
+.btn:nth-child(3) {
+    border-top-right-radius: 0.5rem;
+}
+/* not(.live) for not changing style while hovering over  */
+.btn:hover:not(.live){
+    background: #F5F5DC;
+    color: #004225;
+}
+
+.tabs-content{
+    padding: 2rem 1.5rem;
+}
+
+@media (min-width: 992px) {
+    .img{
+        margin-bottom: 0;
+    }
+    .section-center{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+
+}
+.content{
+    display: none;
+}
+
+.content.live{
+    display: block;
+}
+
+.btn.live{
+    background: #FFCF9D;
+}
